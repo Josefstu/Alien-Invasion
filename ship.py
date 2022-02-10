@@ -13,6 +13,9 @@ class Ship:
         self.image = pygame.image.load('ship.bmp')
         self.rect = self.image.get_rect()
 
+    def update(self):
+        # Update the ship's position based on the movement flag
+
         # Start each new ship at the bottom center of the screen
         self.rect.midbottom = self.screen_rect.midbottom
 
